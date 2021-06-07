@@ -41,3 +41,6 @@ print("\n")
 print("Cluster 2")
 for i in range(6):
     print(str(round(st.mean(cluster2.iloc[:,i]), 2)) + ": " + cluster0.columns[i])
+  
+plt.scatter(data['price'], data['sqft_living'], c=cluster.labels_, cmap='rainbow')
+plt.show()
